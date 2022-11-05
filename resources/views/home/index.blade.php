@@ -13,15 +13,16 @@
                     <div class="col-xs-18 col-sm-6 col-md-3">
                         @if ($product->productLine = 'Motorcycles')
                         <div class="thumbnail">
+                            <a href = " {{ url('product/' .$product->productCode)}} " >
                             <img src="{{ $product->image }}"alt="">
                             <div class="caption">
                                 <h4>{{ $product->productName }}</h4>
-                                <p>{{ $product->productDescription }}</p>
+                                <!-- <p>{{ $product->productDescription }}</p> -->
                                 <p>{{ $product->quantityInStock }}</p>
                                 <p><strong>Price: </strong>{{ $product->buyPrice }}$</p>
                                 <p class="btn-holder">
                                     <a href="{{ route('add.to.cart', $product->productCode) }}" class="btnbtn-warning btn-block text-center" role="button">
-                                        Add to cartt</a></p>
+                                        Add to cart</a></p>
                             </div>
                         </div>
                         @endif

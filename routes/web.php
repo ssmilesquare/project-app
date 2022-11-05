@@ -46,7 +46,7 @@ Route::group(['namespace'=> 'App\Http\Controllers'], function()
             Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
             Route::get('/cart', 'ProductController@cart')->name('cart');
             Route::get('/add-to-cart/{productCode}', 'ProductController@addToCart')->name('add.to.cart');
-            // Route::get('/product/{productCode}', 'DetailController@showDetail')->name('product.details');
+            Route::get('/product/{productCode}', 'ProductController@showDetail')->name('product.details');
             Route::delete('/remove-from-cart/{productCode}','ProductController@remove')->name('remove from cart');
         });
     });
