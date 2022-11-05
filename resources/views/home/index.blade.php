@@ -52,6 +52,9 @@
                                         <p>{{$product->productLine}}</p>
                                         <p>{{$product->productVendor}}</p>
                                         <p><strong>Price: </strong>{{ $product->buyPrice }}$</p>
+                                        <p class="btn-holder">
+                                            <a href="{{ route('add.to.cart', $product->productCode) }}" class="btnbtn-warning btn-block text-center" role="button">
+                                                Add to cart</a></p>
                                     </div>
                                 </div>
                         </div>
