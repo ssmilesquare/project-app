@@ -17,6 +17,6 @@ class DetailController extends Controller
     public function render()
     {
         $product = Product::where('productCode',$this->productCode)->first();
-        return view('show.details',['product'=>$product]);
+        // return view('show.details',['product'=>$product]);
     }
 }

@@ -21,7 +21,7 @@
                                 <p><strong>Price: </strong>{{ $product->buyPrice }}$</p>
                                 <p class="btn-holder">
                                     <a href="{{ route('add.to.cart', $product->productCode) }}" class="btnbtn-warning btn-block text-center" role="button">
-                                        Add to cart</a></p>
+                                        Add to cartt</a></p>
                             </div>
                         </div>
                         @endif
